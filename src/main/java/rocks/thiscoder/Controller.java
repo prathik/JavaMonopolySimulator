@@ -25,10 +25,7 @@ public class Controller {
 
         for(int i = 0; i < 40; i++) {
             Square square = squares.get(i);
-            String output = String.valueOf(square.getLocation()) + "\t";
-            for(int j = 0; j < square.getCount(); j++) {
-                output += "*";
-            }
+            String output = String.valueOf("Square " + square.getLocation()) + " had " + square.getCount() + " visits.";
             System.out.println(output);
         }
     }
